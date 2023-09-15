@@ -1,6 +1,6 @@
 body {
   font-family: poppins;
-  background-color: #de1c85;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/258/original/barbiemovie.jpg?1694800734");
 }
 
 container {
@@ -58,7 +58,7 @@ h1 {
   background-color: pink;
 }
 .grid-container {
-  background-color: white;
+  background-color: #72ccf0;
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 10px;
@@ -66,4 +66,12 @@ h1 {
 }
 .barbiesd {
   border-radius: 200px 200px 200px 200px;
+}
+.Barbiedance {
+  display: grid;
+  grid-template-columns: 3fr;
+  text-align: center;
+  margin-top: 50px;
+  width: 100%;
+  grid-gap: 10px;
 }
