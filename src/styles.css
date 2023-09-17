@@ -79,7 +79,7 @@ main h5 {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.5;
-  color: black;
+  color: rgb(218, 13, 98);
 }
 main p {
   font-style: normal;
@@ -157,9 +157,28 @@ footer {
 }
 
 .Barbiedance {
-  width: 1200px;
-  height: 800px;
+  width: 950px;
+  height: 600px;
 }
+.tables {
+  border: 1px var(--secondary-color);
+  overflow-x: auto;
+  margin-left: 20px;
+}
+td {
+  border-top: 1px var(--secondary-color);
+  padding-left: 0px;
+  padding-right: 50px;
+  text-align: center;
+  margin: 20px;
+  padding-right: 950px;
+  margin-right: 0px;
+}
+thead {
+  background-color: var(--primary-color);
+  padding-left: 100px;
+}
+
 .logos {
   display: inline-block;
 }
