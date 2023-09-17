@@ -37,6 +37,57 @@ header h1 {
   margin-top: 20px;
   padding-left: 20px;
 }
+section {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+main {
+  background-color: white;
+}
+
+main h2 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  opacity: 0.3;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+main h3 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 1.5;
+  letter-spacing: 5px;
+  color: #272044;
+  text-transform: uppercase;
+  margin: 0;
+}
+main p {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.4px;
+  color: #272044;
+  opacity: 0.7;
+}
+
+footer {
+  color: var(--background-color);
+  background-image: linear-gradient(
+      rgba(253, 208, 255, 0.4),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/258/original/barbiemovie.jpg?1694800734");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
 
 .barbiespin {
   margin-left: 100px;
@@ -61,21 +112,11 @@ header h1 {
   height: auto;
   max-width: 100%;
 }
-
-footer {
-  color: var(--background-color);
-  background-image: linear-gradient(
-      rgba(253, 208, 255, 0.4),
-      rgba(0, 0, 0, 0.7)
-    ),
-    url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/258/original/barbiemovie.jpg?1694800734");
-  background-repeat: no-repeat;
-  background-size: cover;
-  margin: 0;
-  padding: 0;
-  text-align: left;
+.grid-middle {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 64px;
 }
-
 .logos {
   display: inline-block;
 }
@@ -85,10 +126,29 @@ footer {
 }
 
 @media (max-width: 960px) {
+  .barbiespin {
+    margin-left: 10px;
+    max-width: 80px;
+  }
   header {
-    padding: 60px 0;
+    margin-top: 70px;
+    width: 100%;
+    left: 0px;
+    margin-left: 0;
   }
   header h1 {
     font-size: 20px;
+  }
+  .grid-middle {
+    grid-template-columns: 1fr;
+    grid-gap: 2px;
+  }
+  section {
+    padding: 30;
+  }
+  section img {
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
   }
 }
