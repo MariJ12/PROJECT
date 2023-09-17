@@ -1,6 +1,5 @@
 body {
-  font-family: poppins;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/258/original/barbiemovie.jpg?1694800734");
+  font-family: pacific;
 }
 
 container {
@@ -10,23 +9,13 @@ container {
 
 header {
   display: block;
-  background-image: url("../images/barbiec.jpg");
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/420/original/1320904.jpg?1694938716");
   background-repeat: no-repeat;
   background-size: cover;
   border-style: solid;
-  border-color: white;
-  border-width: 50px;
-  border-radius: 50px 100px;
-  margin-top: 20px;
-  margin-bottom: 1px;
 }
 
 h2 {
-  display: block;
-  background-repeat: no-repeat;
-  background-size: 700px;
-  font-size: 400px;
-  color: rgba(0, 0, 0, 0);
 }
 h1 {
   color: #de1c85;
