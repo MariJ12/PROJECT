@@ -1,12 +1,16 @@
 :root {
-  --primary-color: red;
-  --secondary-color: #2d2727;
+  --primary-color: #f81586;
+  --secondary-color: #f1009b;
   --accent-color: #f65282;
   --background-color: white;
 }
 
 body {
-  font-family: pacific;
+  font-family: poppins;
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 0px;
+  background-color: var(--primary-color);
 }
 
 container {
@@ -15,57 +19,45 @@ container {
 }
 
 header {
-  display: block;
-  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/420/original/1320904.jpg?1694938716");
+  margin-top: 120px;
+  background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/462/original/Screenshot_2023-09-15_150300.jpg?1694953691");
   background-repeat: no-repeat;
   background-size: cover;
-  border-style: solid;
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  margin-left: 0;
 }
 
-h1 {
+header h1 {
   color: var(--primary-color);
-  font-size: 200px;
-  margin: 0 auto;
-  padding: 10px;
+  font-size: 20px;
+  font-weight: bolder;
   text-align: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.navbar {
-  color: pink;
+  margin-top: 20px;
+  padding-left: 20px;
 }
 
 .barbiespin {
   margin-left: 100px;
+  max-width: 180px;
 }
-.Bhome {
-  color: var(--primary-color);
-  font-size: 20px;
+.Bhome,
+.BWorld {
+  color: var(--secondary-color);
+  font-size: 50px;
+  justify-content: space-between;
+  font-weight: bold;
 }
-.BNews {
-  color: #de1c85;
-  font-size: 20px;
-}
-.container-2 {
+
+.container {
+  max-width: 1400px;
+  margin-top: 150px;
   margin: 0 auto;
-  color: #de1c85;
-  background-color: pink;
 }
-.grid-container {
-  background-color: #72ccf0;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-gap: 10px;
-  text-align: center;
-}
-.barbiesd {
-  border-radius: 200px 200px 200px 200px;
-}
-.Barbiedance {
-  display: grid;
-  grid-template-columns: 3fr;
-  text-align: center;
-  margin-top: 50px;
-  width: 100%;
-  grid-gap: 10px;
+
+.Barbie-poster {
+  margin-top: 170px;
+  height: auto;
+  max-width: 100%;
 }
