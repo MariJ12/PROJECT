@@ -1,3 +1,10 @@
+:root {
+  --primary-color: red;
+  --secondary-color: #2d2727;
+  --accent-color: #f65282;
+  --background-color: white;
+}
+
 body {
   font-family: pacific;
 }
@@ -15,11 +22,9 @@ header {
   border-style: solid;
 }
 
-h2 {
-}
 h1 {
-  color: #de1c85;
-  font-size: 80px;
+  color: var(--primary-color);
+  font-size: 200px;
   margin: 0 auto;
   padding: 10px;
   text-align: center;
@@ -34,7 +39,7 @@ h1 {
   margin-left: 100px;
 }
 .Bhome {
-  color: #de1c85;
+  color: var(--primary-color);
   font-size: 20px;
 }
 .BNews {
