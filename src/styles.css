@@ -191,6 +191,12 @@ thead {
     margin-left: 10px;
     max-width: 80px;
   }
+  .Bhome {
+    font-size: 20px;
+  }
+  .BWorld {
+    font-size: 20px;
+  }
   header {
     margin-top: 70px;
     width: 100%;
