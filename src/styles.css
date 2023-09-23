@@ -162,12 +162,11 @@ footer {
 }
 .tables {
   border: 1px var(--secondary-color);
-  overflow-x: auto;
-  margin-left: 20px;
+  margin-left: 0 auto;
 }
 td {
   border-top: 1px var(--secondary-color);
-  padding-left: 0px;
+  padding-left: 20px;
   padding-right: 50px;
   text-align: center;
   margin: 20px;
@@ -176,7 +175,7 @@ td {
 }
 thead {
   background-color: var(--primary-color);
-  padding-left: 100px;
+  padding-left: 150px;
 }
 
 .logos {
@@ -187,7 +186,7 @@ thead {
   padding-top: 40px;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 800px) {
   .barbiespin {
     margin-left: 10px;
     max-width: 80px;
@@ -210,15 +209,52 @@ thead {
     margin: 0;
     padding: 0;
   }
+
   .grid-middle {
     grid-template-columns: 1fr;
     grid-gap: 2px;
     width: 100%;
     margin: 0;
+    letter-spacing: 303px;
+  }
+  .Barbieworld p {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+    font-style: normal;
+    letter-spacing: 3px;
+    font-weight: 400;
+    font-size: 70000px;
+    line-height: 1.4px;
+    color: #441ddf;
+    background-color: #f1009b;
+    opacity: 0.7;
   }
   .Barbiedance {
-    grid-template-columns: 1fr;
     width: 100%;
     margin: 0;
+  }
+  .grid-3-barbies-kens {
+    grid-template-columns: 1fr;
+    grid-gap: 34px;
+    grid-template-columns: 1fr;
+  }
+  .card {
+    font-size: 10px;
+  }
+  .tables {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+  }
+  td {
+    padding-left: 10px;
+    padding-right: 0px;
+    text-align: left;
+    margin: 0px;
+    padding-right: 0px;
+    margin-right: 0px;
+  }
+  thead {
+    padding-left: 10px;
   }
 }
