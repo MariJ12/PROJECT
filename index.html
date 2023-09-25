@@ -23,12 +23,258 @@
     ></script>
 
     <link rel="stylesheet" href="src/styles.css" />
+    <style>
+      :root {
+        --primary-color: #f81586;
+        --secondary-color: #f1009b;
+        --accent-color: #f65282;
+        --background-color: white;
+      }
+
+      body {
+        font-family: poppins;
+        margin-left: 50px;
+        margin-right: 50px;
+        padding: 0px auto;
+        background-color: var(--primary-color);
+      }
+
+      header {
+        margin-top: 120px;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/462/original/Screenshot_2023-09-15_150300.jpg?1694953691");
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        left: 0px;
+        margin-left: 0;
+      }
+
+      header h1 {
+        color: var(--primary-color);
+        font-size: 20px;
+        font-weight: bolder;
+        text-align: center;
+        margin-top: 20px;
+        padding-left: 20px;
+      }
+      section {
+        max-width: 100%;
+        margin: 0 auto;
+        padding: 100px;
+        display: grid;
+        text-align: center;
+      }
+      section .Barbiedance {
+        width: 100%;
+        height: 95%;
+      }
+      section .Margot {
+        width: 100%;
+        height: 95%;
+      }
+      main {
+        background-color: white;
+      }
+      main h2 {
+        font-weight: 700;
+        font-size: 66px;
+        line-height: 1.5;
+        letter-spacing: 5px;
+        color: var(--accent-color);
+        opacity: 0.3;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      main h3 {
+        font-weight: 700;
+        font-size: 45px;
+        line-height: 1.5;
+        letter-spacing: 5px;
+        color: #272044;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      main h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #f81586;
+      }
+
+      main p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 1.4px;
+        color: #f70928;
+        opacity: 0.7;
+      }
+
+      footer {
+        color: var(--background-color);
+        background-image: linear-gradient(
+            rgba(253, 208, 255, 0.4),
+            rgba(0, 0, 0, 0.7)
+          ),
+          url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/258/original/barbiemovie.jpg?1694800734");
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+        text-align: left;
+      }
+
+      .barbiespin {
+        margin-left: 100px;
+        max-width: 180px;
+      }
+      .Bhome,
+      .BWorld {
+        color: var(--secondary-color);
+        font-size: 50px;
+        justify-content: space-between;
+        font-weight: bold;
+      }
+      .img-responsive {
+        max-width: 100%;
+        margin: 0;
+        display: block;
+      }
+      .container {
+        max-width: 1400px;
+        margin-top: 150px;
+        margin: 0 auto;
+      }
+
+      .text-center {
+        text-align: center;
+      }
+
+      .Barbie-poster {
+        margin-top: 170px;
+        margin-left: 0;
+        height: auto;
+        max-width: 100%;
+      }
+      .Barbiedance {
+        width: 950px;
+        height: 600px;
+      }
+      .grid-middle {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 24px;
+      }
+      .grid-3-barbies-kens {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 20px;
+      }
+      .card {
+        background: pink;
+        right: 0;
+        margin-right: 0;
+        padding-right: 0;
+      }
+
+      table {
+        border: rgb(255, 125, 147);
+        border-width: 20px;
+        border-style: double;
+        border-radius: 15px;
+        margin: 20px auto;
+        color: var(--secondary-color);
+        text-align: center;
+      }
+      table {
+        width: 100%;
+      }
+
+      .logos {
+        display: inline-block;
+      }
+      .mattel {
+        margin-left: 20px;
+        padding-top: 40px;
+      }
+
+      @media (max-width: 800px) {
+        .barbiespin {
+          margin-left: 10px;
+          max-width: 80px;
+        }
+        .Bhome {
+          font-size: 20px;
+        }
+        .BWorld {
+          font-size: 20px;
+        }
+        header {
+          margin-top: 70px;
+          width: 100%;
+          left: 0px;
+          margin-left: 0;
+        }
+        header h1 {
+          font-size: 20px;
+        }
+
+        section {
+          padding: 30;
+        }
+        section img {
+          max-width: 100%;
+          margin: 0;
+          padding: 0;
+        }
+
+        .grid-middle {
+          grid-template-columns: 1fr;
+          grid-gap: 2px;
+          width: 100%;
+          margin: 0;
+          letter-spacing: 303px;
+        }
+        .Barbieworld p {
+          text-align: left;
+          margin: 0;
+          padding: 0;
+          font-style: normal;
+          letter-spacing: 3px;
+          font-weight: 400;
+          font-size: 70000px;
+          line-height: 1.4px;
+          color: #441ddf;
+          background-color: #f1009b;
+          opacity: 0.7;
+        }
+        .Barbiedance {
+          width: 100%;
+          margin: 0;
+        }
+        .grid-3-barbies-kens {
+          grid-template-columns: 1fr;
+          grid-gap: 4px;
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-sm bg-white shadow fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img class="barbiespin" src="images/Barbie.png" alt="Barbiesposter" />
+          <img
+            class="barbiespin"
+            src="
+
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/437/original/barbie.gif?1694947898"
+            alt="Barbiesposter"
+          />
         </a>
         <button
           class="navbar-toggler"
@@ -86,17 +332,31 @@
         <h3>Get to know all the Barbies and their profissions</h3>
         <div class="grid-3-barbies-kens">
           <div class="card">
-            <img src="images/ken1.jpg" alt="" class="img-responsive" />
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/265/original/KEN.jpeg?1694804197"
+              alt=""
+              class="img-responsive"
+            />
             <h4>Ken</h4>
             <p>Original</p>
           </div>
           <div class="card">
-            <img src="images/barbie22.jpg" alt="" class="img-responsive" />
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/262/original/barbie11.jpg?1694804177"
+              alt=""
+              class="img-responsive"
+            />
             <h4>Barbie</h4>
             <p>Barbie</p>
           </div>
           <div class="card">
-            <img src="images/barbie33.jpg" alt="" class="img-responsive" />
+            <img
+              src="
+https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/264/original/barbie33.jpg?1694804190"
+              alt=""
+              class="img-responsive"
+            />
             <h4>Barbie</h4>
             <p>Real World</p>
           </div>
@@ -109,14 +369,14 @@
           <thead>
             <tr>
               <th>Ryan Gosling</th>
-              <th>Emma Mackey</th>
+              <th>Dua Lipa</th>
               <th>America</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>Ken</td>
-              <td>Physicist Barbie</td>
+              <td>Mermaid Barbie</td>
               <td>Real Life Barbie</td>
             </tr>
           </tbody>
