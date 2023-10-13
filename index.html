@@ -33,8 +33,9 @@
 
       body {
         font-family: poppins;
-        margin-left: 50px;
-        margin-right: 50px;
+        margin-top: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
         padding: 0px auto;
         background-color: var(--primary-color);
       }
@@ -143,12 +144,13 @@ a:hover {
       .middle-section {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        grid-gap: 24px;
+        grid-gap: 50px;
         background-color: var(--background-color);
       }
       .middle-section p {
         text-align: center;
-        color: black;
+        margin-top: 20px;
+
       }
       .middle-section h2 {
         font-weight: 700;
@@ -187,7 +189,7 @@ a:hover {
       }
       .Margot {
         max-width: 100%;
-        max-height: 40%;
+        max-height: 45%;
       }
       .Barbiedance {
         max-width: 100%;
@@ -224,6 +226,7 @@ a:hover {
       }
 
       @media (max-width: 800px) {
+        
         .barbiespin {
           margin-left: 10px;
           max-width: 20px;
@@ -232,7 +235,7 @@ a:hover {
           font-size: 20px;
         }
         .BDance{
-font-size: 20px;
+         font-size: 20px;
         }
         header {
           margin-top: 50px;
@@ -260,6 +263,7 @@ font-size: 20px;
 
         main p {
           font-size: 15px;
+         
         }
         section {
           padding: 20px;
@@ -268,7 +272,7 @@ font-size: 20px;
         section h2 {
           font-family: 20px;
         }
-
+       
         .Barbiedance {
           width: 100%;
           margin: 0;
@@ -284,7 +288,7 @@ font-size: 20px;
   <body cz-shortcut-listen="true">
     <nav class="navbar navbar-expand-sm bg-white shadow fixed-top">
       <div class="container-fluid">
-        <a class="navbar-brand" href="https://mj-addon-project.netlify.app/#">
+        <a href="#B&K"class="navbar-brand" >
           <img
             class="barbiespin"
             src="./images/barbie.gif"
@@ -304,7 +308,7 @@ font-size: 20px;
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a 
+            <a href="#BH"
               class="Bhome nav-link"
               aria-current="page"
                alt="Home-page"
@@ -319,8 +323,8 @@ font-size: 20px;
         </div>
       </div>
     </nav>
-    <div class="container">
-      <header >
+    <div class="container" id="BH">
+      <header>
         <h1>Copyright © 2023 MJ-Barbie Page</h1>
       </header>
     </div>
@@ -330,7 +334,7 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/458/origina
     </div>
     <main>
       <section class="barbie-ken">
-        <h3 class="text-center BKS">Barbies & Kens</h3>
+        <h3 class="text-center BKS" id="B&K">Barbies & Kens</h3>
         <div class="grid-3-barbies-kens">
           <div class="card">
             <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/262/original/barbie11.jpg?1694804177" alt="BARBIE" class="img-responsive" />
@@ -380,9 +384,9 @@ https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/266/origina
     </main>
     <section class="middle-section">
       <div>
-        <h2 class="Mar">Margot 💗</h2>
+        <h2 class="Mar">Margot <br />💗</h2>
         <p>
-          Did you know? <br />
+          Did you know? 
           "Barbie" is all about the hair. "The key look for Barbie was this
           impossible amount of hair," Margot Robbie told Teen Vogue. "I cannot
           think of a movie that had more hair than the 'Barbie' movie, because
