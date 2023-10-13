@@ -1,16 +1,27 @@
 <!DOCTYPE html>
 <!-- saved from url=(0037)https://mj-addon-project.netlify.app/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MJ-Barbie</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com/">
-    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="">
-    <link href="./index_files/css2" rel="stylesheet">
-    <link href="./index_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="./index_files/bootstrap.bundle.min.js.download" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
-    <link rel="stylesheet" href="./index_files/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MJ-Barbie</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com/" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin="" />
+    <link href="./index_files/css2" rel="stylesheet" />
+    <link
+      href="./index_files/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="./index_files/bootstrap.bundle.min.js.download"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="./index_files/styles.css" />
     <style>
       :root {
         --primary-color: #f81586;
@@ -28,7 +39,7 @@
       }
 
       header {
-        margin-top: 120px;
+        margin-top: 100px;
         background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/097/462/original/Screenshot_2023-09-15_150300.jpg?1694953691");
         background-repeat: no-repeat;
         background-size: cover;
@@ -64,41 +75,15 @@
       main {
         background-color: white;
       }
-      main h2 {
-        font-weight: 700;
-        font-size: 66px;
-        line-height: 1.5;
-        letter-spacing: 5px;
-        color: var(--accent-color);
-        opacity: 0.3;
-        text-transform: uppercase;
-        margin: 0;
-      }
 
       main h3 {
         font-weight: 700;
         font-size: 45px;
         line-height: 1.5;
         letter-spacing: 5px;
-        color: #272044;
+        color: #8f79eb;
         text-transform: uppercase;
         margin: 0;
-      }
-
-      main h4 {
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.5;
-        color: #f81586;
-      }
-
-      main p {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 26px;
-        line-height: 1.4px;
-        color: #f70928;
-        opacity: 0.7;
       }
 
       footer {
@@ -117,18 +102,18 @@
 
       .barbiespin {
         margin-left: 100px;
-        max-width: 180px;
+        max-width: 70px;
       }
       .Bhome,
-      .BWorld {
+      .BDance {
         color: var(--secondary-color);
-        font-size: 50px;
+        font-size: 40px;
         justify-content: space-between;
         font-weight: bold;
       }
       .img-responsive {
         max-width: 100%;
-        margin: 0;
+        margin: 0 auto;
         display: block;
       }
       .container {
@@ -141,24 +126,63 @@
         text-align: center;
       }
 
+      .middle-section {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 24px;
+        background-color: var(--background-color);
+      }
+      .middle-section p {
+        text-align: center;
+        color: black;
+      }
+      .middle-section h2 {
+        font-weight: 700;
+        font-size: 40px;
+        line-height: 1.5;
+        letter-spacing: 5px;
+        color: var(--accent-color);
+        opacity: 0.3;
+        text-transform: uppercase;
+        margin: 0;
+      }
+
+      .middle-section h4 {
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 1.5;
+        color: #f81586;
+      }
+
+      .middle-section p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 30.4px;
+        color: #f70928;
+        opacity: 0.7;
+      }
       .Barbie-poster {
         margin-top: 170px;
         margin-left: 0;
         height: auto;
         max-width: 100%;
+        max-height: 100%;
+        border-top-right-radius: 20px;
+        border-top-left-radius: 20px;
+      }
+      .Margot {
+        max-width: 500px;
+        max-height: 400px;
       }
       .Barbiedance {
-        width: 950px;
-        height: 600px;
+        max-width: 100%;
+        max-height: 50%;
       }
-      .grid-middle {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-gap: 24px;
-      }
+
       .grid-3-barbies-kens {
         display: grid;
-        grid-gap: 30px;
+        grid-gap: 20px;
         grid-template-columns: 1fr 1fr 1fr;
         margin-top: 20px;
       }
@@ -193,53 +217,46 @@
       @media (max-width: 800px) {
         .barbiespin {
           margin-left: 10px;
-          max-width: 80px;
+          max-width: 20px;
         }
         .Bhome {
           font-size: 20px;
         }
-        .BWorld {
-          font-size: 20px;
-        }
         header {
-          margin-top: 70px;
+          margin-top: 50px;
+          background-image: repeat;
           width: 100%;
           left: 0px;
-          margin-left: 0;
         }
         header h1 {
           font-size: 20px;
         }
-
-        section {
-          padding: 30;
-        }
-        section img {
-          max-width: 100%;
+        .middle-section {
           margin: 0;
+          margin-left: 0;
           padding: 0;
-        }
-
-        .grid-middle {
+          text-align: center;
           grid-template-columns: 1fr;
-          grid-gap: 2px;
-          width: 100%;
-          margin: 0;
-          letter-spacing: 303px;
         }
-        .Barbieworld p {
-          text-align: left;
-          margin: 0;
-          padding: 0;
-          font-style: normal;
-          letter-spacing: 3px;
-          font-weight: 400;
-          font-size: 70000px;
-          line-height: 1.4px;
-          color: #441ddf;
-          background-color: #f1009b;
-          opacity: 0.7;
+
+        main h2 {
+          font-size: 30px;
+          margin-top: 10px;
+          text-align: center;
+          padding: 10px;
         }
+
+        main p {
+          font-size: 15px;
+        }
+        section {
+          padding: 20px;
+          margin: 0 auto;
+        }
+        section h2 {
+          font-family: 20px;
+        }
+
         .Barbiedance {
           width: 100%;
           margin: 0;
@@ -256,15 +273,36 @@
     <nav class="navbar navbar-expand-sm bg-white shadow fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="https://mj-addon-project.netlify.app/#">
-          <img class="barbiespin" src="./index_files/barbie.gif" alt="Barbiesposter">
+          <img
+            class="barbiespin"
+            src="./index_files/barbie.gif"
+            alt="Barbiesposter"
+          />
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
           <div class="navbar-nav">
-            <a class="Bhome nav-link" aria-current="page" href="https://mj-addon-project.netlify.app/#">Home</a>
-            <a class="nav-link BWorld" href="https://mj-addon-project.netlify.app/#BDance">Barbie Dance </a>
+            <a
+              class="Bhome nav-link"
+              aria-current="page"
+              href="https://mj-addon-project.netlify.app/#"
+              >Hi Barbie</a
+            >
+            <a
+              class="nav-link BDance"
+              href="https://mj-addon-project.netlify.app/#BDance"
+              >Dance
+            </a>
           </div>
         </div>
       </div>
@@ -275,41 +313,100 @@
       </header>
     </div>
     <div>
-      <img class="Barbie-poster" src="./index_files/1320904.jpg">
+      <img class="Barbie-poster" src="./index_files/1320904.jpg" />
     </div>
     <main>
-      <section class="grid-middle">
-        <div id="BDance">
-          <h2>We Love Margot</h2>
-          <img class="Margot img-responsive" src="./index_files/barbie01.png">
-        </div>
-        <div class="Barbieworld">
-          <h2>Barbie Dance</h2>
-          <iframe class="Barbiedance img-responsive" src="./index_files/vPErDQ9ILUg.html" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
-        </div>
-      </section>
       <section class="barbie-ken">
-        <h2 class="text-center">Barbies and Kens</h2>
-        <h3>Get to know all the Barbies and their profissions</h3>
+        <h3 class="text-center">Barbies and Kens</h3>
         <div class="grid-3-barbies-kens">
           <div class="card">
-            <img src="./index_files/KEN.jpeg" alt="" class="img-responsive">
+            <img src="./index_files/KEN.jpeg" alt="" class="img-responsive" />
             <h4>Ken</h4>
             <p>Original</p>
           </div>
           <div class="card">
-            <img src="./index_files/barbie11.jpg" alt="" class="img-responsive">
+            <img
+              src="./index_files/barbie11.jpg"
+              alt=""
+              class="img-responsive"
+            />
             <h4>Barbie</h4>
             <p>Barbie</p>
           </div>
           <div class="card">
-            <img src="./index_files/barbie33.jpg" alt="" class="img-responsive">
+            <img
+              src="./index_files/barbie33.jpg"
+              alt=""
+              class="img-responsive"
+            />
             <h4>Barbie</h4>
             <p>Real World</p>
           </div>
         </div>
       </section>
     </main>
+    <section class="middle-section">
+      <div>
+        <h2 class="Mar">Margot 💗</h2>
+        <p>
+          Did you know? <br />
+
+          "Barbie" is all about the hair. "The key look for Barbie was this
+          impossible amount of hair," Margot Robbie told Teen Vogue. "I cannot
+          think of a movie that had more hair than the 'Barbie' movie, because
+          everyone had wigs with 10 times the amount of hair a wig would
+          normally have in it." Robbie's hair was, of course, the perfect shade
+          of blonde and hit her mid-back. Her hair was often styled with big
+          bows, sweeping bangs, and plenty of bouncy curls.
+        </p>
+        <img class="Margot img-responsive" src="./index_files/barbie01.png" />
+      </div>
+      <div>
+        <h2>Where it all started</h2>
+        <p>
+          Mattel is a place where the reality dream is born. We empower the next
+          generation to explore the wonder of childhood and reach their full
+          potential. Mattel is a leading global toy company and owner of one of
+          the strongest portfolios of children’s and family entertainment
+          franchises in the world. Our mission is to create innovative products
+          and experiences that inspire, entertain and develop children through
+          play.
+        </p>
+        <iframe
+          class="img-responsive"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d847519.8585994195!2d-118.94521682783027!3d33.925064!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2b6b492c9d4f7%3A0x9fdf1b6e7dfa0939!2sMattel%2C%20Inc.%20Handler%20Team%20Center!5e0!3m2!1sen!2suk!4v1697210557365!5m2!1sen!2suk"
+          width="400"
+          height="300"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+      <div>
+        <h2>Barbie Dance <br />💃</h2>
+        <p>
+          The Dance Delight in ‘Barbie’ Belongs to the Kens The most majestic
+          dance in “Barbie” is an emotional release for the Kens, but in subtle
+          ways movement touches, and enhances, everything in the movie. The Ken
+          number, created by the film’s London-based choreographer, Jennifer
+          White, is partly inspired by the movie “Grease,” when John Travolta
+          leads a song-and-dance in a garage that suddenly opens into a bright,
+          glowing soundstage.
+        </p>
+        <iframe
+          class="img-responsive"
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/wxJrPUg4IYk?si=lpq8XDbSegcHY8W6"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
     <main class="tables">
       <div>
         <table>
@@ -332,12 +429,25 @@
     </main>
     <footer>
       <div class="logos">
-        <a href="https://shopping.mattel.com/en-gb/collections/barbie"><img class="mattel" src="./index_files/mattel.png" width="250" target="_blank" alt="_blank"></a>
-        <a href="https://www.imdb.com/title/tt1517268/"><img class="mattel" src="./index_files/tt_small.png" width="400" alt="_blank" target="_blank"></a>
+        <a href="https://shopping.mattel.com/en-gb/collections/barbie"
+          ><img
+            class="mattel"
+            src="./index_files/mattel.png"
+            width="250"
+            target="_blank"
+            alt="_blank"
+        /></a>
+        <a href="https://www.imdb.com/title/tt1517268/"
+          ><img
+            class="mattel"
+            src="./index_files/tt_small.png"
+            width="400"
+            alt="_blank"
+            target="_blank"
+        /></a>
       </div>
-      <br>
+      <br />
       Copyright © 2023 Mariana. J
     </footer>
-  
-
-</body></html>
+  </body>
+</html>
